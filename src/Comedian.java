@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class Comedian extends Performer {
     private ArrayList<String> jokes;
+    private int performances = 0;
 
     // EXERCISE 1: try swapping the two lines of code
     // below so that the call to super() comes AFTER
@@ -23,8 +24,10 @@ public class Comedian extends Performer {
     // Then uncomment test code for Exercise 2 in Main.java and test
 
 
-
-
+    @Override
+    public void callAgent() {
+        System.out.println("Let me run this new joke past my agent! Siri, dial 646-555-5555");
+    }
 
     // EXERCISE 3: as you saw in exercise 1, when calling a superclass' CONSTRUCTOR from
     // a subclass' constructor, super MUST be the first line of code; is that the case for
@@ -35,8 +38,9 @@ public class Comedian extends Performer {
     // If it does compile, run test code for Exercise 3 to test
     @Override
     public void printInfo() {
-        super.printInfo(); // this calls the SUPERCLASS version of printInfo
+        // super.printInfo(); // this calls the SUPERCLASS version of printInfo
         System.out.println("I will make you laugh!");
+        super.printInfo();
     }
 
     // Exercise 4: Override the perform() method so that the output for
@@ -45,8 +49,11 @@ public class Comedian extends Performer {
     // followed by EACH joke on a NEW line
 
 
-
-
+    @Override
+    public void perform() {
+       performances++;
+       System.out.println("Performing for an audience! Performance #" + performances);
+    }
 
     // Exercise 5: PREDICT what this will print when
     // the Exercise 5 test code in Main.java is executed;
