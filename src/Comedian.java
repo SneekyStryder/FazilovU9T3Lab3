@@ -75,5 +75,10 @@ public class Comedian extends Performer {
     //    followed by perform if performAfter is true.
 
 
-
+    public void rehearse(boolean performAfter) {
+        super.rehearse();
+        if (performAfter == true) {
+            perform();
+        }
+    }
 }

@@ -1,44 +1,44 @@
 public class Main {
     public static void main(String[] args) {
-        // ---------TEST CODE for Exercise 2---------
-        System.out.println("---- Exercise 2 ----");
+    /*
+        System.out.println("--- Testing Dancer constructor ---");
+        Agent maria = new Agent("Maria Hilliard", "917-221-3451");
+        Dancer tony = new Dancer("Tony Danza", 32, maria, 11);
+    */
 
-        Agent amy = new Agent("Amy Higgins", "646-555-5555");
+    /*
+        System.out.println("--- Testing Part 1: pirouette ---");
+        tony.pirouette(5); // new method
+    */
 
-        Performer david = new Performer("David", 23, amy);
-        // should print: "I am calling my agent! Siri, dial 646-555-5555"
-        david.callAgent();
+    /*
+        System.out.println("\n--- Testing Part 2: rehearse ---");
+        tony.rehearse(); // overridden method
+    */
 
-        // override callAgent in Comedian to print
-        // "Let me run this new joke past my agent! Siri, dial 646-555-5555"
-        Comedian brittany = new Comedian("Brittany", 19, amy);
-        brittany.callAgent();
+    /*
+        System.out.println("\n--- Testing Part 3: perform ---");
+        tony.perform(); // inherited method
+        System.out.println();
+        tony.perform(true); // overloaded method
+        System.out.println();
+        tony.perform(false); // overloaded method
+    */
 
+    /*
+        System.out.println("\n--- Testing Part 4: callAgent ---");
+        tony.callAgent(); // overridden method
+    */
 
-        // ---------TEST CODE for Exercise 3---------
-        System.out.println("---- Exercise 3 ----");
-        brittany.printInfo();
+    /*
+        System.out.println("\n--- Testing Part 5: callAgent #2 ---");
+        tony.callAgent(12); // overloaded method
+    */
 
-        // ---------TEST CODE for Exercise 4---------
-        System.out.println("---- Exercise 4 ----");
-
-        Comedian morgan = new Comedian("Morgan Smith", 31, amy);
-        morgan.writeJoke("There are 10 kinds of people in the world: Those that understand binary and those that don't");
-        morgan.writeJoke("How many programmers does it take to change a light bulb? None, that's a hardware problem!");
-        morgan.writeJoke("What's the object oriented way to become wealthy? Inheritance!");
-        morgan.perform();
-
-        // ---------TEST CODE for Exercise 5---------
-        System.out.println("---- Exercise 5 ----");
-
-        morgan.randomMethod;
-
-        // ---------TEST CODE for Exercise 6---------
-        System.out.println("---- Exercise 6 ----");
-        /*
-        morgan.rehearse();
-        morgan.rehearse(true);
-        morgan.rehearse(false);
-        */
+    /*
+        System.out.println("\n--- Testing Part 6 & 7: getter methods ---");
+        System.out.println(tony.getShoeSize()); // new getter method
+        System.out.println(tony.getName()); // overridden getter method
+    */
     }
 }
